@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelayakan Pinjaman</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Kelayakan Pinjaman Bank</h1>
+        <form id="loan-form">
+            <label for="umur">Nama:</label>
+            <input type="text" id="nama" name="nama" placeholder="Nama lengkap anda" required>
+            <label for="umur">Email:</label>
+            <input type="text" id="email" name="email" placeholder="Email anda" required>
+            <label for="umur">Umur:</label>
+            <input type="number" id="umur" name="umur" placeholder="Umur" required>
+
+            <label for="pendapatan">Pendapatan Bulanan (jutaan rupiah):</label>
+            <input type="number" id="pendapatan" name="pendapatan" placeholder="Cth. 2/3/4" step="0.01" required>
+
+            <label for="status-kerja">Status Kerja:</label>
+            <select id="status-kerja" name="status-kerja" required>
+                <option value="">Pilih</option>
+                <option value="ya">Ya</option>
+                <option value="tidak">Tidak</option>
+            </select>
+
+            <button type="submit">Cek Kelayakan</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+    <div class="footer">&COPY; Kelompok 9 | All rights reserved</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
